@@ -1,0 +1,8 @@
+﻿  func.c
+C:\Download\Student\Kursach\func.c(73,9): warning C4550: вычисление выражения дает функцию, в которой отсутствует список аргументов
+C:\Download\Student\Kursach\func.c(80,9): warning C4550: вычисление выражения дает функцию, в которой отсутствует список аргументов
+C:\Download\Student\Kursach\func.c(95,9): warning C4550: вычисление выражения дает функцию, в которой отсутствует список аргументов
+C:\Download\Student\Kursach\func.c(110,9): warning C4550: вычисление выражения дает функцию, в которой отсутствует список аргументов
+C:\Download\Student\Kursach\func.c(152,9): warning C4550: вычисление выражения дает функцию, в которой отсутствует список аргументов
+C:\Download\Student\Kursach\func.c(173,9): warning C4013: _getch: нет определения; предполагается "extern" с возвратом типа "int"
+  Kursach.vcxproj -> C:\Download\Student\Kursach\Debug\Kursach.exe

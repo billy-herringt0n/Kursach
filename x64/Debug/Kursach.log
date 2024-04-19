@@ -1,0 +1,83 @@
+﻿  func.c
+  main.c
+C:\Download\Student\Kursach\func.c(40,9): warning C4550: вычисление выражения дает функцию, в которой отсутствует список аргументов
+C:\Download\Student\Kursach\func.c(47,9): warning C4550: вычисление выражения дает функцию, в которой отсутствует список аргументов
+C:\Download\Student\Kursach\func.c(62,9): warning C4550: вычисление выражения дает функцию, в которой отсутствует список аргументов
+C:\Download\Student\Kursach\func.c(84,9): warning C4550: вычисление выражения дает функцию, в которой отсутствует список аргументов
+C:\Download\Student\Kursach\func.c(131,9): warning C4550: вычисление выражения дает функцию, в которой отсутствует список аргументов
+C:\Download\Student\Kursach\func.c(152,9): warning C4013: _getch: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Download\Student\Kursach\main.c(34,9): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Download\Student\Kursach\main.c(34,9): error C2065: lea: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(34,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "edx"
+C:\Download\Student\Kursach\main.c(34,9): error C2065: edx: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(34,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "push"
+C:\Download\Student\Kursach\main.c(34,9): error C2065: push: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(34,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "call"
+C:\Download\Student\Kursach\main.c(34,9): error C2065: call: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(34,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "printf"
+C:\Download\Student\Kursach\main.c(34,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "pop"
+C:\Download\Student\Kursach\main.c(34,9): warning C4550: вычисление выражения дает функцию, в которой отсутствует список аргументов
+C:\Download\Student\Kursach\main.c(34,9): error C2065: pop: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(34,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "lea"
+C:\Download\Student\Kursach\main.c(34,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Download\Student\Kursach\main.c(34,9): error C2065: eax: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(34,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+C:\Download\Student\Kursach\main.c(34,9): error C2065: ebx: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(34,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "add"
+C:\Download\Student\Kursach\main.c(34,9): error C2065: add: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(34,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "esp"
+C:\Download\Student\Kursach\main.c(34,9): error C2065: esp: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(35,9): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Download\Student\Kursach\main.c(35,9): error C2065: lea: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(35,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "edx"
+C:\Download\Student\Kursach\main.c(35,9): error C2065: edx: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(35,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "push"
+C:\Download\Student\Kursach\main.c(35,9): error C2065: push: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(35,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "call"
+C:\Download\Student\Kursach\main.c(35,9): error C2065: call: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(35,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "printf"
+C:\Download\Student\Kursach\main.c(35,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "pop"
+C:\Download\Student\Kursach\main.c(35,9): warning C4550: вычисление выражения дает функцию, в которой отсутствует список аргументов
+C:\Download\Student\Kursach\main.c(35,9): error C2065: pop: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(35,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "lea"
+C:\Download\Student\Kursach\main.c(35,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Download\Student\Kursach\main.c(35,9): error C2065: eax: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(35,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+C:\Download\Student\Kursach\main.c(35,9): error C2065: ebx: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(35,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "add"
+C:\Download\Student\Kursach\main.c(35,9): error C2065: add: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(35,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "esp"
+C:\Download\Student\Kursach\main.c(35,9): error C2065: esp: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(36,9): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Download\Student\Kursach\main.c(36,9): error C2065: lea: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(36,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "edx"
+C:\Download\Student\Kursach\main.c(36,9): error C2065: edx: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(36,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "push"
+C:\Download\Student\Kursach\main.c(36,9): error C2065: push: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(36,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "call"
+C:\Download\Student\Kursach\main.c(36,9): error C2065: call: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(36,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "printf"
+C:\Download\Student\Kursach\main.c(36,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "pop"
+C:\Download\Student\Kursach\main.c(36,9): warning C4550: вычисление выражения дает функцию, в которой отсутствует список аргументов
+C:\Download\Student\Kursach\main.c(36,9): error C2065: pop: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(36,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "lea"
+C:\Download\Student\Kursach\main.c(36,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Download\Student\Kursach\main.c(36,9): error C2065: eax: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(36,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+C:\Download\Student\Kursach\main.c(36,9): error C2065: ebx: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(36,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "add"
+C:\Download\Student\Kursach\main.c(36,9): error C2065: add: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(36,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "esp"
+C:\Download\Student\Kursach\main.c(36,9): error C2065: esp: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(37,9): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Download\Student\Kursach\main.c(37,9): error C2065: lea: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(37,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "edx"
+C:\Download\Student\Kursach\main.c(37,9): error C2065: edx: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(37,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "push"
+C:\Download\Student\Kursach\main.c(37,9): error C2065: push: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(37,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "call"
+C:\Download\Student\Kursach\main.c(37,9): error C2065: call: необъявленный идентификатор
+C:\Download\Student\Kursach\main.c(37,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "printf"
+C:\Download\Student\Kursach\main.c(37,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "pop"
+C:\Download\Student\Kursach\main.c(37,9): error C1003: число ошибок превышает 100; остановка компиляции
+  Создание кода...

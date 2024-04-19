@@ -1,0 +1,254 @@
+#include "Header.h"
+
+struct Contact { // Структура для контакта
+    char name[50]; // Имя контакта
+    char surname[50]; // Фамилия контакта
+    char adress[20]; // Адрес контакта
+    struct Contact* next; // Указатель на следующий контакт
+};
+
+typedef struct Contact Contact;
+
+Contact* head = NULL; // Голова списка
+int n = 0; // Количество контактов
+
+int inputNumber() {
+    int a;
+    int input_success = 0;
+
+    while (!input_success) {
+        printf("Введите число: ");
+
+        // Попытка считать число
+        if (scanf("%d", &a) != 1) {
+            // Если не удалось считать число
+            printf("Некорректный ввод! Пожалуйста, попробуйте снова: ");
+            // Очистка буфера ввода от некорректных символов
+            while (getchar() != '\n');
+        }
+        else {
+            // Проверка наличия лишних символов в буфере ввода
+            int c;
+            while ((c = getchar()) != '\n' && c != EOF);
+
+            if (c != '\n') {
+                printf("Некорректный ввод! Пожалуйста, введите только число: ");
+            }
+            else {
+                input_success = 1;
+            }
+        }
+    }
+
+    return a;
+}
+
+Contact* createContact(char name[], char surname[], char adress[]) {
+    Contact* new_contact = (Contact*)malloc(sizeof(Contact));
+    if (new_contact == NULL) {
+        printf("Ошибка: Недостаточно памяти для создания нового контакта.\n");
+        exit(EXIT_FAILURE);
+    }
+    strcpy(new_contact->name, name);
+    strcpy(new_contact->surname, surname);
+    strcpy(new_contact->adress, adress);
+    new_contact->next = NULL;
+    return new_contact;
+}
+
+void input(Contact* new_contact) {
+    if (head == NULL) {
+        head = new_contact;
+    }
+    else {
+        Contact* current = head;
+        while (current->next != NULL) {
+            current = current->next;
+        }
+        current->next = new_contact;
+    }
+    n++;
+}
+
+void delete() {
+    if (head == NULL) {
+        printf("Список контактов пуст!\n");
+        return;
+    }
+
+    printf("Введите индекс контакта, который нужно удалить (от 1 до %d): ", n);
+    int index = inputNumber();
+
+    if (index < 1 || index > n) {
+        printf("Некорректный индекс!\n");
+        return;
+    }
+
+    Contact* temp;
+    if (index == 1) {
+        temp = head;
+        head = head->next;
+        free(temp);
+    }
+    else {
+        Contact* current = head;
+        for (int i = 1; i < index - 1; i++) {
+            current = current->next;
+        }
+        temp = current->next;
+        current->next = temp->next;
+        free(temp);
+    }
+    n--;
+    printf("Контакт удален!\n");
+}
+
+void look() {
+    if (head == NULL) {
+        printf("Список контактов пуст!\n");
+        return;
+    }
+
+    Contact* current = head;
+    printf("Все контакты:\n");
+    int index = 1;
+    while (current != NULL) {
+        printf("%d. %s %s: %s\n", index, current->name, current->surname, current->adress);
+        current = current->next;
+        index++;
+    }
+}
+
+void freeContacts() {
+    Contact* current = head;
+    while (current != NULL) {
+        Contact* temp = current;
+        current = current->next;
+        free(temp);
+    }
+    head = NULL;
+}
+
+void search() {
+    if (head == NULL) {
+        printf("Список контактов пуст!\n");
+        return;
+    }
+
+    printf("Введите имя, фамилию или адрес человека (можно ввести несколько букв или цифр): ");
+    char search[50];
+    scanf("%s", search);
+
+    Contact* current = head;
+    int found = 0;
+    int index = 1;
+    printf("Результаты поиска:\n");
+    while (current != NULL) {
+        if (strstr(current->name, search) != NULL || strstr(current->surname, search) != NULL || strstr(current->adress, search) != NULL) {
+            printf("%d. %s %s: %s\n", index, current->name, current->surname, current->adress);
+            found = 1;
+        }
+        current = current->next;
+        index++;
+    }
+
+    if (!found) {
+        printf("Ничего не найдено.\n");
+    }
+}
+
+void red() {
+    if (head == NULL) {
+        printf("Список контактов пуст!\n");
+        return;
+    }
+
+    printf("Введите индекс контакта, который хотите изменить (от 1 до %d): ", n);
+    int index = inputNumber();
+
+    if (index < 1 || index > n) {
+        printf("Некорректный индекс!\n");
+        return;
+    }
+
+    Contact* current = head;
+    for (int i = 1; i < index; i++) {
+        current = current->next;
+    }
+
+    int choice;
+    printf("1. Поменять имя\n");
+    printf("2. Поменять фамилию\n");
+    printf("3. Поменять адрес\n");
+    printf("4. Поменять всё\n");
+    printf("Выберите действие: ");
+    choice = inputNumber();
+
+    switch (choice) {
+    case 1:
+        printf("Введите новое имя: ");
+        scanf("%s", current->name);
+        printf("Имя изменено!\n");
+        break;
+    case 2:
+        printf("Введите новую фамилию: ");
+        scanf("%s", current->surname);
+        printf("Фамилия изменена!\n");
+        break;
+    case 3:
+        printf("Введите новый адрес: ");
+        scanf("%s", current->adress);
+        printf("Адрес изменен!\n");
+        break;
+    case 4:
+        printf("Введите новое имя: ");
+        scanf("%s", current->name);
+        printf("Введите новую фамилию: ");
+        scanf("%s", current->surname);
+        printf("Введите новый адрес: ");
+        scanf("%s", current->adress);
+        printf("Контакт изменен!\n");
+        break;
+    default:
+        printf("Некорректный выбор!\n");
+        break;
+    }
+}
+
+void write(const char* filename) {
+    FILE* file = fopen(filename, "w");
+    if (file == NULL) {
+        printf("Ошибка: Невозможно открыть файл для записи.\n");
+        return;
+    }
+
+    fprintf(file, "%d\n", n);
+    Contact* current = head;
+    while (current != NULL) {
+        fprintf(file, "%s %s %s\n", current->name, current->surname, current->adress);
+        current = current->next;
+    }
+
+    fclose(file);
+    printf("Данные успешно записаны в файл.\n");
+}
+
+void read(const char* filename) {
+    FILE* file = fopen(filename, "r");
+    if (file == NULL) {
+        printf("Ошибка: Невозможно открыть файл для чтения.\n");
+        return;
+    }
+
+    int count;
+    fscanf(file, "%d", &count);
+
+    char name[50], surname[50], adress[20];
+    for (int i = 0; i < count; i++) {
+        fscanf(file, "%s %s %s", name, surname, adress);
+        addContact(createContact(name, surname, adress));
+    }
+
+    fclose(file);
+    printf("Данные успешно загружены из файла.\n");
+}
